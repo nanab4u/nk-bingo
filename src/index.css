@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Lora:wght@400;600;700&display=swap');
 @import 'tailwindcss';
 
 @theme {
-  --color-accent: #2563eb;
-  --color-accent-light: #3b82f6;
-  --color-marked: #dcfce7;
-  --color-marked-border: #22c55e;
-  --color-bingo: #fbbf24;
+  --color-coffee-dark: #6b4423;
+  --color-coffee-medium: #8b5e35;
+  --color-coffee-light: #d4a574;
+  --color-cream: #faf5f0;
+  --color-cream-secondary: #f5ede5;
+  --color-sage: #9ca89d;
+  --color-sage-light: #c5cdc8;
+  --color-burnt-orange: #c85a28;
+  --color-accent: #c85a28;
+  --color-marked: #e8d5c4;
+  --color-marked-border: #c85a28;
+  --color-bingo: #d4a574;
 }
 
 html,
@@ -16,6 +24,23 @@ body,
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: 'Lora', serif;
+  background-color: #faf5f0;
   -webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+  color: #6b4423;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
